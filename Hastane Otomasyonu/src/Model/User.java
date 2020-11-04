@@ -1,5 +1,7 @@
 package Model;
 
+import Helper.DBConnection;
+
 public class User {
 	
 	
@@ -50,6 +52,9 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
+	DBConnection conn = new DBConnection();
+	
 	private int id;
 	private String tcno,name,password,type;
 	
